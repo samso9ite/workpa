@@ -40,7 +40,7 @@ export default function Login() {
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
     >
       <section>
-        <div className="grid grid-cols-2" style={{paddingTop:"11rem"}}>
+        <div className="grid grid-cols-2" >
           <div >
            <form className='form-control'>
               <h1 style={{fontWeight:"600", marginLeft:"4.5rem"}} className='mb-4'>Login with your socials below</h1>
