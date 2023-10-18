@@ -37,13 +37,13 @@ export default function Login() {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
     >
-      <section className="" style={{marginTop:"5rem"}}>
-        <div className="grid h-screen grid-cols-2">
-          <div className="">
+      <section>
+        <div className="grid grid-cols-2" style={{paddingTop:"11rem"}}>
+          <div >
            <form className='form-control'>
-              <h1 style={{fontWeight:"600", marginLeft:"4.5rem"}} className=' mb-4'>Login with your socials below</h1>
+              <h1 style={{fontWeight:"600", marginLeft:"4.5rem"}} className='mb-4'>Login with your socials below</h1>
                 <select className="mb-10 block w-3/4 appearance-none h-14 bg-white text-gray-700 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:shadow-outline">
                   <option data-image="/images/carousel1.svg" >
                     <div className="flex items-center" >
@@ -63,15 +63,12 @@ export default function Login() {
                   placeholder="Enter your email"
                   onChange={emailHandler}
                 />
-                {/* </center>
-                <center> */}
                  <input
                   type="text"
                   className="mt-4 w-3/4 bg-transparent px-3 py-2 mt-1 text-gray-700 border-2 h-14 rounded-full focus:ring focus:ring-indigo-400 focus:outline-none focus:border-indigo-300 hover:border-gray-400"
                   placeholder="Enter Password"
                   onChange={passwordHandler}
                 /><br />
-                {/* </center> */}
                 <button className="hover:bg-blue-700 text-black  py-2 px-4 rounded-full mt-3" style={{background:"#7B61FF", }} onClick={submitHandler}>
                   Log in
                 </button> <span style={{marginLeft:'8rem'}}>Forgot Password?</span> 
