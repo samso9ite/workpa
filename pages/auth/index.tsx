@@ -72,7 +72,7 @@ export default function Login() {
                   onChange={passwordHandler}
                 /><br />
                 {/* </center> */}
-                <button className="hover:bg-blue-700 text-black  py-2 px-4 rounded-full mt-3" style={{background:"#7B61FF", }}>
+                <button className="hover:bg-blue-700 text-black  py-2 px-4 rounded-full mt-3" style={{background:"#7B61FF", }} onClick={submitHandler}>
                   Log in
                 </button> <span style={{marginLeft:'8rem'}}>Forgot Password?</span> 
               </form>
