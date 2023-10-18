@@ -25,7 +25,11 @@ export default function Register() {
 
     const submitHandler = () => {
         setIsSubmitting(true)
-        Api.axios_instance.post(Api.baseUrl+'post_api_listeners_register')
+        const formData = {
+            email: email,
+            password: password
+          }
+        Api.axios_instance.post(Api.baseUrl+'post_api_listeners_register', formData)
         .then(res => {
             console.log(res);
         }).catch((error) => {console.log(error);
