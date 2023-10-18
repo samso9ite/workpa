@@ -13,7 +13,6 @@ return(
             interval={2000}
             organicArrows={false}
             bullets={false}
-            // fillParent={false}
         >
             <div>  
                 <img
@@ -29,7 +28,7 @@ return(
                   src="/images/carousel3.svg"
                   className="block w-full"
                   alt="Wild Landscape" /></div>
-           </AutoplaySlider>
+        </AutoplaySlider>
     </>
 )
 }
