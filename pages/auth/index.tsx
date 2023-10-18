@@ -40,16 +40,14 @@ export default function Login() {
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
     >
       <section>
-        <div className="grid grid-cols-2" >
+        <div className="grid grid-cols-2" style={{paddingTop:"10rem"}}>
           <div >
            <form className='form-control'>
               <h1 style={{fontWeight:"600", marginLeft:"4.5rem"}} className='mb-4'>Login with your socials below</h1>
                 <select className="mb-10 block w-3/4 appearance-none h-14 bg-white text-gray-700 border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded-full shadow leading-tight focus:outline-none focus:shadow-outline">
                   <option data-image="/images/carousel1.svg" >
-                    <div className="flex items-center" >
-                        <img src='/images/carousel1.svg'/> Continue with facebook
-                       </div>
-                  </option>
+                       Continue with facebook
+                   </option>
                   <option value="option1" data-icon="🌞">Continue with apple ID</option>
                   <option value="option2" >Continue with google</option>
                 </select>
